@@ -7,82 +7,82 @@
     tools:context=".LancamentoActivity">
 
     <TextView
-        android:id="@+id/tvCodConfirmar"
+        android:id="@+id/tvCodLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Cod:"
-        app:layout_constraintBottom_toBottomOf="@+id/etCodConfirmar"
+        app:layout_constraintBottom_toBottomOf="@+id/etCodLancamento"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/etCodConfirmar" />
+        app:layout_constraintTop_toTopOf="@+id/etCodLancamento" />
 
     <EditText
-        android:id="@+id/etCodConfirmar"
+        android:id="@+id/etCodLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/tvCodConfirmar"
+        app:layout_constraintStart_toEndOf="@+id/tvCodLancamento"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvQtdConfirmar"
+        android:id="@+id/tvQtdLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Qtd:"
-        app:layout_constraintBottom_toBottomOf="@+id/etQtdConfirmar"
-        app:layout_constraintStart_toStartOf="@+id/tvCodConfirmar"
-        app:layout_constraintTop_toTopOf="@+id/etQtdConfirmar" />
+        app:layout_constraintBottom_toBottomOf="@+id/etQtdLancamento"
+        app:layout_constraintStart_toStartOf="@+id/tvCodLancamento"
+        app:layout_constraintTop_toTopOf="@+id/etQtdLancamento" />
 
     <EditText
-        android:id="@+id/etQtdConfirmar"
+        android:id="@+id/etQtdLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toStartOf="@+id/etCodConfirmar"
-        app:layout_constraintTop_toBottomOf="@+id/etCodConfirmar" />
+        app:layout_constraintStart_toStartOf="@+id/etCodLancamento"
+        app:layout_constraintTop_toBottomOf="@+id/etCodLancamento" />
 
     <TextView
-        android:id="@+id/tvValorConfirmar"
+        android:id="@+id/tvValorLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Valor:"
-        app:layout_constraintBottom_toBottomOf="@+id/etValorConfirmar"
-        app:layout_constraintStart_toStartOf="@+id/tvQtdConfirmar"
-        app:layout_constraintTop_toTopOf="@+id/etValorConfirmar" />
+        app:layout_constraintBottom_toBottomOf="@+id/etValorLancamento"
+        app:layout_constraintStart_toStartOf="@+id/tvQtdLancamento"
+        app:layout_constraintTop_toTopOf="@+id/etValorLancamento" />
 
     <EditText
-        android:id="@+id/etValorConfirmar"
+        android:id="@+id/etValorLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/etQtdConfirmar"
-        app:layout_constraintTop_toBottomOf="@+id/etQtdConfirmar" />
+        app:layout_constraintStart_toStartOf="@+id/etQtdLancamento"
+        app:layout_constraintTop_toBottomOf="@+id/etQtdLancamento" />
 
     <Button
-        android:id="@+id/btConfirmarConfirmar"
+        android:id="@+id/btConfirmarLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:onClick="btConfirmarOnClick"
         android:text="Confirmar"
-        app:layout_constraintStart_toEndOf="@+id/tvValorConfirmar"
-        app:layout_constraintTop_toBottomOf="@+id/etValorConfirmar" />
+        app:layout_constraintStart_toEndOf="@+id/tvValorLancamento"
+        app:layout_constraintTop_toBottomOf="@+id/etValorLancamento" />
 
     <Button
-        android:id="@+id/btListarConfirmar"
+        android:id="@+id/btListarLancamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:onClick="btListarOnClick"
         android:text="Listar"
-        app:layout_constraintBottom_toBottomOf="@+id/btConfirmarConfirmar"
-        app:layout_constraintStart_toEndOf="@+id/btConfirmarConfirmar" />
+        app:layout_constraintBottom_toBottomOf="@+id/btConfirmarLancamento"
+        app:layout_constraintStart_toEndOf="@+id/btConfirmarLancamento" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
