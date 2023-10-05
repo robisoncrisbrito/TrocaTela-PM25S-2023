@@ -1,5 +1,6 @@
 package br.edu.utfpr.trocatela
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -15,10 +16,19 @@ class LancamentoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lancamento)
 
-        etCod = findViewById( )
+        etCod = findViewById( R.id.etCodLancamento )
+        etQtd = findViewById( R.id.etQtdLancamento )
+        etValor = findViewById( R.id.etValorLancamento )
     }
 
     fun btConfirmarOnClick(view: View) {
+        val intent = Intent( this, ConfirmarActivity::class.java )
+
+        intent.putExtra( "cod", etCod.text.toString() )
+        intent.putExtra( "qtd", etQtd.text.toString() )
+        intent.putExtra( "valor", etValor.text.toString() )
+
+        startActivity( intent )
 
     }
     fun btListarOnClick(view: View) {
