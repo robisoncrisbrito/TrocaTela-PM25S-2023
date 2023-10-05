@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 
 class LancamentoActivity : AppCompatActivity() {
 
@@ -32,7 +34,25 @@ class LancamentoActivity : AppCompatActivity() {
 
     }
     fun btListarOnClick(view: View) {
+        Intent( this, ListarActivity::class.java ).let {
+            register.launch( it )
+        }
 
     }
+
+    val register = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult() ) {
+            result: ActivityResult ->
+                if ( result.resultCode == RESULT_OK ) {
+                    result.data?.let {
+                        val codRetorno = it.getStringExtra( "codRetorno")
+                        etCod.setText( codRetorno )
+                    }
+                }
+        }
+
+
+
+
 
 }
